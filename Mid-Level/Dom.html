@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <div class="container">
+        <div class="start">
+            Class - 1
+        </div>
+        <div>
+            Class - 2
+        </div>
+        <div id="para">
+            Class - 3
+        </div>
+        <button onclick="changeArticle()">Click Me</button>
+    </div>
+
+    <script>
+        const changeArticle = () =>{
+            // First Method,
+            // document.getElementById('para').innerHTML = "Ayush is this Side";
+
+            // Second Method,
+            // const changeArticle = document.getElementById('para');
+            // changeArticle.innerHTML = "Welcome";
+
+            // same as you take class and particular selectors also,
+            // console.log(document.getElementsByClassName('start'));
+            // console.log(document.getElementsByTagName('div'));
+
+            // For radio selectors like male female and all,
+            // console.log(document.getElementsByName('gender'));
+
+            // queryselector returns the first matching value whereas.
+            // queryselectorall() will return all the elements.
+
+            // console.log(document.querySelector('#para'));
+            // console.log(document.querySelectorAll('#para'));
+
+            // Same work as element by id and query selector as to format of css aas particular,
+            // Example:-
+
+            // console.log(document.querySelector('ul li.web-class').innerHTML);
+            // console.log(document.querySelector('li .web-class').innerHTML);
+            // console.log(document.querySelector('.web-class').innerHTML);
+        }
+    </script>
+</body>
+</html>
